@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class atv14 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        
+        System.out.print("Digite o primeiro número inteiro: ");
+        int num1 = scanner.nextInt();
+
+    
+        System.out.print("Digite o segundo número inteiro (diferente do primeiro): ");
+        int num2 = scanner.nextInt();
+
+        
+        if (num1 == num2) {
+            System.out.println("Os números devem ser distintos.");
+        } else {
+            
+            if (num1 > num2) {
+                System.out.println("O maior número é: " + num1);
+            } else {
+                System.out.println("O maior número é: " + num2);
+            }
+        }
+
+        scanner.close();
+    }
+}
